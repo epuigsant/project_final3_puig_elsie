@@ -324,7 +324,6 @@ img {
 }
 
 .three-column-widget {
-    background-color: black;
     height: 100px;
     width: 33%;
     display: inline-block;
@@ -337,4 +336,20 @@ img {
 }
 
 #dish-of-the-day {
+}
+
+#rotating-banner {
+    width: 100%;
+    background-color: #6f9929;
+    text-align: center;
+    margin-top: -30px;
+    min-height: 100px;
+}
+
+#rotating-banner p {
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
