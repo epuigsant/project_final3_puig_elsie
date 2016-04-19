@@ -1,0 +1,289 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-image: url("../img/background-copy.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 1600px;
+}
+
+/* Grid */
+
+.container {
+    padding: 0 30px;
+}
+
+.container .column {
+    display: inline-block;
+    padding: 3em;
+    vertical-align: top;
+}
+
+.container .one-of-two {
+    width:49%;
+}
+
+#header {
+    width: 100%;
+}
+
+/* Header */
+
+#logo {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-bottom: 0.7em solid #133f66;
+    border-top: 0.7em solid #000000;
+}
+
+#logo img {
+    width: 15%;
+    display: block;
+    margin: auto;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+#navigation ul {
+    margin-top: 0;
+    margin-bottom: 1em;
+    padding: 0.5em 0;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+#navigation li {
+    display: inline-block;
+    margin-right: 1px;
+}
+
+li a {
+    display: block;
+    min-width: 2em;
+    padding: 0.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #133f66;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 3px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li a:hover {
+    text-decoration: none;
+    color: #d7b424;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Main Section */
+
+#main {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#main-content {
+    background-color: #ffffff;
+    border-radius: 1em;
+}
+
+#main-content h1 {
+    font-family: 'Fredoka One', cursive;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #133f66;
+}
+
+#main-content h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    color: #4e2b19;
+}
+
+#main-content p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#main-content a {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    color: #bf1e2e;
+}
+
+#main-content a:hover {
+    color: #6f9929;
+}
+
+button {
+    width: 8em;
+    height: 3em;
+    padding: 0.2em 0 0.2em 0;
+    border-style: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+    text-decoration: none;
+    background-color: #bf1e2e;
+}
+
+button:hover {
+    width: 9em;
+    height: 4em;
+    background-color: #133f66;
+}
+
+button:active {
+    font-style: italic;
+}
+
+/* Aside - Colors and Textures Sections */
+
+/*#sidebar {
+    float: right;
+}*/
+
+#sidebar h2 {
+    margin-top: 0;
+    padding: 0;
+}
+
+.sections {
+    width: 100%;
+}
+
+.sections h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #133f66;
+    text-align: center;
+}
+
+.image-swatches ul {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 0;
+}
+
+.image-swatches li {
+    width: 50%;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.color-swatches ul {
+    margin: 0 0 40px 0;
+    padding: 0;
+    text-align: center;
+    font-size: 0;
+}
+
+.color-swatches li {
+    list-style-type: none;
+    display: inline-block;
+    width: 20%;
+    margin-top: 5px;
+}
+
+.swatch {
+    border: 2px solid #ffffff;
+    height: 100px;
+    margin-right: 5px;
+}
+
+.blue {
+    background-color: #133f66;
+}
+
+.red {
+    background-color: #bf1e2e;
+}
+
+.yellow {
+    background-color: #d7b424;
+}
+
+.green {
+    background-color: #6f9929;
+}
+
+.brown {
+    background-color: #4e2b19;
+}
+
+/* Footer */
+
+#footer {
+    clear: both;
+    width: 100%;
+    background-color: #133f66;
+    font-family: 'Delius Swash Caps', cursive;
+    color: #ffffff;
+    height: 3em;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+/* Media Queries */
+
+/*Mobile Menu*/
+
+@media screen and (max-width: 450px) {
+    li {
+        margin-bottom: 1px;
+    }
+    ul li,
+    li a {
+        width: 100%;
+    }
+}
+
+/* Mobile Grid */
+
+@media screen and (max-width: 950px) {
+    .container .one-of-two {
+        width: 100%;
+    }
+
+    .image-swatches li {
+        width: 33%;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .image-swatches li {
+        width: 100%;
+    }
+    .color-swatches li {
+        width: 50%;
+    }
+}
