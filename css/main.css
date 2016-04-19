@@ -17,7 +17,7 @@ body {
 /* Grid */
 
 .container {
-    padding: 0 30px;
+    /*padding: 0 30px;*/
 }
 
 .container .column {
@@ -40,7 +40,6 @@ body {
     width: 100%;
     margin: 0 auto;
     background-color: #ffffff;
-    border-bottom: 0.7em solid #133f66;
     border-top: 0.7em solid #000000;
 }
 
@@ -64,10 +63,11 @@ body {
 #navigation ul {
     margin-top: 0;
     margin-bottom: 1em;
-    padding: 0.5em 0;
+    padding: 0.1em 0;
     list-style: none;
     width: 100%;
     text-align: center;
+    background-color: #133f66;
 }
 
 #navigation li {
@@ -77,15 +77,13 @@ body {
 
 li a {
     display: block;
-    min-width: 2em;
-    padding: 0.8em;
+    min-width: 1.5em;
+    padding: 0.6em;
     text-decoration: none;
     text-align: center;
     text-transform: uppercase;
-    background-color: #133f66;
     color: #ffffff;
     font-weight: 600;
-    border-radius: 3px;
     font-family: 'Open Sans', sans-serif;
 }
 
