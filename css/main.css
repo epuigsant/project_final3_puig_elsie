@@ -11,7 +11,7 @@ html {
 body {
     background-image: url("../img/background-copy.jpg");
     font-family: Arial, Helvetica, sans-serif;
-    max-width: 1600px;
+    /*max-width: 1600px;*/
 }
 
 /* Grid */
@@ -96,7 +96,7 @@ li a:hover {
     font-family: 'Open Sans', sans-serif;
 }
 
-/* Contct Info Section */
+/* Location and Hours of Operations */
 
 #contact-info {
     width: 100%;
@@ -147,7 +147,7 @@ li a:hover {
 #main-content {
     background-color: #ffffff;
     border-radius: 1em;
-    width: 1200px;
+    max-width: 1200px;
     padding: 20px 20px 20px 20px;
     margin: auto;
     margin-top: 50px;
@@ -204,81 +204,9 @@ button:active {
     font-style: italic;
 }
 
-/* Aside - Colors and Textures Sections */
-
-#sidebar h2 {
-    margin-top: 0;
-    padding: 0;
-}
-
-.sections {
-    width: 100%;
-}
-
-.sections h2 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
-    text-transform: uppercase;
-    color: #133f66;
-    text-align: center;
-}
-
-.image-swatches ul {
-    padding: 0;
-    margin: 0;
-    text-align: center;
-    font-size: 0;
-}
-
-.image-swatches li {
-    width: 50%;
-    display: inline-block;
-    margin: 0 auto;
-    padding: 5px;
-}
 
 img {
     max-width: 100%;
-}
-
-.color-swatches ul {
-    margin: 0 0 40px 0;
-    padding: 0;
-    text-align: center;
-    font-size: 0;
-}
-
-.color-swatches li {
-    list-style-type: none;
-    display: inline-block;
-    width: 20%;
-    margin-top: 5px;
-}
-
-.swatch {
-    border: 2px solid #ffffff;
-    height: 100px;
-    margin-right: 5px;
-}
-
-.blue {
-    background-color: #133f66;
-}
-
-.red {
-    background-color: #bf1e2e;
-}
-
-.yellow {
-    background-color: #d7b424;
-}
-
-.green {
-    background-color: #6f9929;
-}
-
-.brown {
-    background-color: #4e2b19;
 }
 
 /* Footer */
@@ -332,16 +260,49 @@ img {
 /* Special Events, Promotions, Dish of The Day */
 
 #three-column-container {
-    width: 100%;
-    padding: 0 50px 0 50px;
+    max-width: 900px;
+    margin: auto;
 }
 
 .special-widgets {
-    width: 300px;
-    height: 425px;
-    display: inline-block;
+    display: block;
+    float: left;
+    height: 480px;
+    align-content: center;
     background-color: white;
     font-family: 'Open Sans', sans-serif;
+    margin: 1% 0 1% 1.6%;
+}
+
+.special-widgets:first-child {
+    margin-left: 0;
+}
+
+/*  Grouping  */
+.group:before,
+.group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  Three Column Grid  */
+.one-of-three {
+    width: 32.26%;
+}
+
+/*  Widgets go full width below 480px */
+@media only screen and (max-width: 480px) {
+    .special-widgets {
+        margin: 1% 0 1% 0%;
+    }
+    .one-of-three { width: 100%; }
 }
 
 .special-widgets h2 {
@@ -350,25 +311,19 @@ img {
     text-transform: uppercase;
     font-size: 16px;
     font-weight: 600;
+    padding: 5px;
+    text-align: center;
 }
 
 .special-widgets p,
 li {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    padding: 10px;
 }
 
 .special-widgets img {
     width: 300px;
-}
-
-#events {
-}
-
-#promotions {
-}
-
-#dish-of-the-day {
 }
 
 /* Rotating Text Banner Styling */
