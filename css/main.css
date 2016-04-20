@@ -417,3 +417,30 @@ img {
 #big-image img {
     width: 100%;
 }
+
+/*MENU PAGE*/
+
+.menu-align {
+    text-align: center;
+}
+
+.price {
+    font-size: 18px;
+    font-weight: 700px;
+    color: #bf1e2e;
+}
+
+/*.image-circle {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    border-radius: 100%;
+}*/
+
+.image-circle img {
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: solid 4px #133f66;
+}
