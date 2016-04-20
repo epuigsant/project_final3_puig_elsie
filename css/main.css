@@ -100,6 +100,7 @@ li a:hover {
 
 #contact-info {
     width: 100%;
+    min-height: 170px;
     background-color: white;
     margin-top: -20px;
     padding: 15px 10px;
@@ -107,9 +108,10 @@ li a:hover {
 
 .contact {
     display: inline-block;
+    float: left;
     margin: auto;
-    width: 33%;
     text-align: center;
+    width: 33%;
 }
 
 .little {
@@ -133,6 +135,15 @@ li a:hover {
 
 .contact img {
     width: 70px;
+}
+
+@media screen and (max-width: 670px) {
+    .contact {
+        width: 100%;
+    }
+    #contact-info {
+        min-height: 370px;
+    }
 }
 
 /* Main Section */
