@@ -16,8 +16,10 @@ body {
 
 /* Grid */
 
+/*
+
 .container {
-    /*padding: 0 30px;*/
+padding: 0 30px;
 }
 
 .container .column {
@@ -28,7 +30,7 @@ body {
 
 .container .one-of-two {
     width:49%;
-}
+}*/
 
 #header {
     width: 100%;
@@ -110,14 +112,16 @@ li a:hover {
     text-align: center;
 }
 
-#little {
+.little {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.2px;
     font-size: 14px;
+    color: #6f9929;
+    font-weight: 400;
 }
 
-#big {
+.big {
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
@@ -135,12 +139,18 @@ li a:hover {
 
 #main {
     margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
     width: 100%;
 }
 
 #main-content {
     background-color: #ffffff;
     border-radius: 1em;
+    width: 1200px;
+    padding: 20px 20px 20px 20px;
+    margin: auto;
+    margin-top: 50px;
 }
 
 #main-content h1 {
@@ -195,10 +205,6 @@ button:active {
 }
 
 /* Aside - Colors and Textures Sections */
-
-/*#sidebar {
-    float: right;
-}*/
 
 #sidebar h2 {
     margin-top: 0;
@@ -323,10 +329,37 @@ img {
     }
 }
 
-.three-column-widget {
-    height: 100px;
-    width: 33%;
+/* Special Events, Promotions, Dish of The Day */
+
+#three-column-container {
+    width: 100%;
+    padding: 0 50px 0 50px;
+}
+
+.special-widgets {
+    width: 300px;
+    height: 425px;
     display: inline-block;
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.special-widgets h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: #133f66;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.special-widgets p,
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.special-widgets img {
+    width: 300px;
 }
 
 #events {
@@ -337,6 +370,8 @@ img {
 
 #dish-of-the-day {
 }
+
+/* Rotating Text Banner Styling */
 
 #rotating-banner {
     width: 100%;
