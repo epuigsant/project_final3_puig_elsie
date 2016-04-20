@@ -100,9 +100,8 @@ li a:hover {
 
 #contact-info {
     width: 100%;
-    min-height: 170px;
+    min-height: 140px;
     background-color: white;
-    margin-top: -20px;
     padding: 15px 10px;
 }
 
@@ -112,6 +111,7 @@ li a:hover {
     margin: auto;
     text-align: center;
     width: 33%;
+    margin-top: 30px;
 }
 
 .little {
@@ -121,6 +121,7 @@ li a:hover {
     font-size: 14px;
     color: #6f9929;
     font-weight: 400;
+    margin-top: -15px;
 }
 
 .big {
@@ -133,8 +134,18 @@ li a:hover {
     margin-top: -15px;
 }
 
+.little-bold {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+    font-size: 14px;
+    color: #133f66;
+    font-weight: 700;
+}
+
 .contact img {
-    width: 70px;
+    width: 50px;
+    padding-top: 20px;
 }
 
 @media screen and (max-width: 670px) {
@@ -394,4 +405,14 @@ img {
     color: white;
     padding-top: 30px;
     padding-bottom: 15px;
+}
+
+#big-image {
+    width: 100%;
+    max-height: 350px;
+    margin-top: -15px;
+}
+
+#big-image img {
+    width: 100%;
 }
