@@ -260,15 +260,15 @@ img {
 /* Special Events, Promotions, Dish of The Day */
 
 #three-column-container {
-    max-width: 900px;
+    max-width: 1200px;
     margin: auto;
 }
 
 .special-widgets {
     display: block;
     float: left;
-    height: 480px;
-    align-content: center;
+    min-height: 540px;
+    text-align: center;
     background-color: white;
     font-family: 'Open Sans', sans-serif;
     margin: 1% 0 1% 1.6%;
@@ -298,10 +298,10 @@ img {
 }
 
 /*  Widgets go full width below 480px */
-@media only screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .special-widgets {
         margin: 1% 0% 1% 0%;
-        height: 520px;
+        min-height: 600px;
     }
     .one-of-three {
         width: 100%;
@@ -310,7 +310,11 @@ img {
 
 .special-widgets h2 {
     font-family: 'Open Sans', sans-serif;
-    color: #133f66;
+    background-color: #133f66;
+    color: white;
+    width: 100%;
+    min-height: 30px;
+    margin: 0 auto;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: bolder;
@@ -339,15 +343,28 @@ img {
     font-family: 'Open Sans', sans-serif;
     color: #bf1e2e;
     text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 18px;
+    font-weight: 800;
     padding: 0 20px 0 20px;
     text-align: center;
-    margin-top: -10px;
 }
 
 .special-widgets img {
     width: 100%;
+}
+
+.widget-button {
+    padding: 0.2em 0.1em 0.2em 0.1em;
+    border-style: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 12px;
+    text-decoration: none;
+    background-color: #133f66;
+    border-radius: 2px;
+    margin-top: 10px;
 }
 
 /* Rotating Text Banner Styling */
