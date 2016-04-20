@@ -203,6 +203,11 @@ li a:hover {
     color: #6f9929;
 }
 
+#wrap {
+    float: left;
+    margin: 0 10px 5px 0;
+}
+
 button {
     width: 8em;
     height: 3em;
