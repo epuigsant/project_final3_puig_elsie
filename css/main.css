@@ -300,30 +300,54 @@ img {
 /*  Widgets go full width below 480px */
 @media only screen and (max-width: 480px) {
     .special-widgets {
-        margin: 1% 0 1% 0%;
+        margin: 1% 0% 1% 0%;
+        height: 520px;
     }
-    .one-of-three { width: 100%; }
+    .one-of-three {
+        width: 100%;
+    }
 }
 
 .special-widgets h2 {
     font-family: 'Open Sans', sans-serif;
     color: #133f66;
     text-transform: uppercase;
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 14px;
+    font-weight: bolder;
     padding: 5px;
     text-align: center;
 }
 
-.special-widgets p,
-li {
+.special-widgets p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    padding: 10px;
+    padding: 0 20px 0 20px;
+    margin-top: -10px;
+}
+
+.special-widgets table {
+    margin-top: -10px;
+}
+
+.special-widgets td {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    padding: 0 20px 0 20px;
+}
+
+.special-widgets h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #bf1e2e;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0 20px 0 20px;
+    text-align: center;
+    margin-top: -10px;
 }
 
 .special-widgets img {
-    width: 300px;
+    width: 100%;
 }
 
 /* Rotating Text Banner Styling */
