@@ -13,8 +13,22 @@ $( '.rotate' ).textrotator( {
   speed: 2000
 } );
 
+// This JQuery code will slide down a div
+// with additional event information
+// when events widget button is moused over
+$( '#more' ).mouseover( function( ) {
+ $( '#target' ).slideDown( 'slow', function() {
+  } );
+} );
 
-$( "#more" ).click(function() {
- $( "#target" ).slideDown( "slow", function() {
-  });
-});
+
+//Added a <p> tag and content to the DOM
+
+var newContent = document.getElementById( 'promotions' );
+var newParagraph = document.createElement( 'p' );
+
+newParagraph.innerHTML = 'We are waiting for you';
+
+newContent.appendChild( newParagraph );
+
+newParagraph.className = 'pstyle';

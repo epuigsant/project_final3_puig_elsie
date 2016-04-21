@@ -87,6 +87,7 @@ li a:hover {
 }
 
 .contact {
+    display: none;
     display: inline-block;
     float: left;
     margin: auto;
@@ -411,13 +412,12 @@ img {
 /* SLIDE DOWN DIV STYLING */
 
 #target {
-    width: 350px;
-    height: 230px;
-    background-color: #bf1e2e;
-    color: white;
+    width: 300px;
+    height: 100px;
     display: none;
-    padding: 30px 10px 0 10px;
     margin-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
 }
 
 #target h2 {
