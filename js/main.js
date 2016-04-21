@@ -30,5 +30,3 @@ var newParagraph = document.createElement( 'p' );
 newParagraph.innerHTML = 'We are waiting for you';
 
 newContent.appendChild( newParagraph );
-
-newParagraph.className = 'pstyle';
