@@ -12,3 +12,9 @@ $( '.rotate' ).textrotator( {
   animation: 'dissolve',
   speed: 2000
 } );
+
+
+$( "#more" ).click(function() {
+ $( "#target" ).slideDown( "slow", function() {
+  });
+});
